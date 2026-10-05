@@ -1,42 +1,87 @@
-'''for i in range(6):
+'''41. Right Triangle Pattern
+For n = 5:
+*
+**
+***
+****
+*****
+'''
+for i in range(6):
     for j in range(i):
         print("*", end='')
-    print()'''
+    print()
 
-'''for i in range(5, 1, -1):
+'''42. Inverted Triangle 
+***** 
+**** 
+*** 
+** 
+*
+'''
+for i in range(5, 1, -1):
     for j in range(i):
         print("*", end='')
-    print()'''
+    print()
 
-'''for i in range(1, 6, 1):
+'''43. Number Triangle 
+1 
+12 
+123 
+1234 
+12345
+'''
+for i in range(1, 6, 1):
     for j in range(1, i+1):
         print(j, end='')
-    print()'''
+    print()
 
-'''for i in range(1, 6):
+'''44. Repeated Number Triangle 
+1 
+22 
+333 
+4444 
+55555
+'''
+for i in range(1, 6):
     for j in range(1, i+1):
         print(i, end='')
-    print()'''
-'''n = 0
+    print()
+
+'''45. Pyramid 
+* 
+*** 
+***** 
+******* 
+*********
+'''
+
+n = 0
 for i in range(4):
     for j in range(i):
         print((2*n-1)*"*")
-        n += 1'''
+        n += 1
 
-'''n = 5
+'''46. Inverted Pyramid'''
+n = 5
 for i in range(4, 0, -1):
     for j in range(i):
         print((2*n-1)*"*")
-        n -= 1'''
+        n -= 1
 
-'''n = 1
+'''47. Floyd's Triangle 
+1 
+2 3 
+4 5 6 
+7 8 9 10
+'''
+n = 1
 for i in range(5):
     for j in range(i):
         print(n, end=' ')
         n += 1
-    print()'''
+    print()
 
-
+'''48. Pascal's Triangle'''
 prev = [1]
 for i in range(5):
     print(prev)
@@ -50,20 +95,26 @@ for i in range(5):
 
 
 
-'''header = ["*"]+[str(x) for x in range(1,11)]
-
+'''49. Multiplication Grid'''
+header = ["*"]+[str(x) for x in range(1,11)]
 print("\t".join(header))
+
 for i in range(1,11):
     row = [str(i)]+[str(i*j) for j in range(1, 11)]
-    print("\t".join(row))'''
+    print("\t".join(row))
 
-'''header = [str("*****")]
+'''50. Hollow Square 
+For n = 5: 
+***** 
+*   * 
+*   * 
+*   * 
+*****
+'''
+header = [str("*****")]
 print("\t".join(header))
 for i in range(1,4):
     for j in range(1,4):
         if j == 1 or j == 5:
             print("*   *" )
-print("\t".join(header))'''
-
-
-
+print("\t".join(header))

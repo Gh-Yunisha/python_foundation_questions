@@ -1,12 +1,13 @@
-'''str1 = input("Enter any string:")
+#51. Reverse a String
+str1 = input("Enter any string:")
 l = len(str1)
 str2 = ''
 for c in range(l-1, -1, -1):
     str2 = str2 + str1[c]
-print("Reverse string:" + str2)'''
-from typing import Dict, Any
+print("Reverse string:" + str2)
 
-'''str1 = input("Enter the string:")
+#52. Palindrome String
+str1 = input("Enter the string:")
 val = str1
 str2 = ''
 l = len(str1)
@@ -15,9 +16,10 @@ for c in range(l-1, -1, -1):
 if val == str2:
     print("Palindrome")
 else:
-    print("Not palindrome")'''
+    print("Not palindrome")
 
-'''str1 = input("Enter the string:")
+#53. Count Vowels
+str1 = input("Enter the string:")
 l = len(str1)
 count = 0
 vowel = 'aeiouAEIOU'
@@ -27,9 +29,10 @@ for c in str1:
     #if x == 'a' or x == 'e' or x == 'i' or x == 'o' or x == 'u':
     if c in vowel:
         count += 1
-print("Vowel count:", count)'''
+print("Vowel count:", count)
 
-'''str1 = input("Enter the string:").lower()
+#54. Count Vowels and Consonants
+str1 = input("Enter the string:").lower()
 l = len(str1)
 vc = 0
 cc = 0
@@ -43,35 +46,38 @@ for c in str1:
         vc += 1
     elif c in cons:
         cc += 1
-print("Vowel count:", vc, "\tConsonant count:", cc)'''
+print("Vowel count:", vc, "\tConsonant count:", cc)
 
-'''str = input("Enter the string:")
+#55. Count Characters
+str = input("Enter the string:")
 freq = {}
 for c in str:
     if c in freq:
         freq[c] += 1
     else:
         freq[c] = 1
-print("Frequency of letters:", freq)'''
+print("Frequency of letters:", freq)
 
-'''str1 = input("Enter any string:")
+#56. Remove Spaces
+str1 = input("Enter any string:")
 str2 = ''
-sp = ' '
 for c in str1:
     if c != ' ':
         str2 += c
-print("Manipulated string:", str2)'''
+print("Manipulated string:", str2)
 
-'''str1 = input("Enter any string:")
+#57. Toggle Case
+str1 = input("Enter any string:")
 str2 = ''
 for c in str1:
     if c.islower():
         str2 += c.upper()
     elif c.isupper():
         str2 += c.lower()
-print("Swap content:", str2)'''
+print("Swap content:", str2)
 
-'''str1 = input("Enter the string:")
+#58. Find Longest Word
+str1 = input("Enter the string:")
 str_list = list(map(str, str1.split()))
 str2 = ''
 longest = len(str_list[0])
@@ -81,9 +87,10 @@ for c in str_list:
         longest = l1
         str2 = c
 
-print(str2)'''
+print(str2)
 
-'''str1 = input("Enter string:")
+#59. Find Shortest Word
+str1 = input("Enter string:")
 str_list = list(map(str, str1.split()))
 shortest = len(str_list[0])
 str2 = ''
@@ -92,14 +99,16 @@ for c in str_list:
     if l1 <= shortest:
         shortest = l1
         str2 = c
-print("Shortest words:", str2)'''
+print("Shortest words:", str2)
 
-'''str1 = input("Enter string:")
-str_list = list(map(str, str1.split(?)))
+#60. Count Words
+str1 = input("Enter string:")
+str_list = list(map(str, str1.split()))
 count = len(str_list)
-print("Count:", count)'''
+print("Count:", count)
 
-'''str = input("Enter a string:")
+#61. First Non-Repeating Character
+str = input("Enter a string:")
 freq = {}
 for c in str:
     if c in freq:
@@ -110,22 +119,10 @@ print(freq)
 for k in freq:
     if freq[k] == 1:
         print("First non repeating character:", k)
-        exit()'''
+        exit()
 
-'''str = input("Enter a string:")
-freq = {}
-for c in str:
-    if c in freq:
-        freq[c] += 1
-    else:
-        freq[c] = 1
-print(freq)
-for k in freq:
-    if freq[k] == 1:
-        print("First non repeating character:", k)
-        exit()'''
-
-'''str = input("Enter the string:")
+#62. First Repeating Character
+str = input("Enter the string:")
 freq = {}
 for c in str:
     if c in freq:
@@ -136,9 +133,10 @@ print(freq)
 for k in freq:
     if freq[k] > 1:
         print("First repeating character:", k)
-        exit()'''
+        exit()
 
-'''str = input("Enter the string:")
+#63. Remove Duplicate Characters
+str = input("Enter the string:")
 freq = {}
 str1 = ''
 for c in str:
@@ -147,9 +145,10 @@ for c in str:
     else:
         str1 += c
         freq[c] = 1
-print("Removing duplicate characters:", str1)'''
+print("Removing duplicate characters:", str1)
 
-'''str1 = input("Enter the string:")
+#64. Anagram Checker
+str1 = input("Enter the string:")
 str2 = input("Enter the checking string:")
 freq1 = {}
 freq2 = {}
@@ -169,8 +168,9 @@ for k in str2:
 if freq1 == freq2:
     print("Anagram")
 else:
-    print("Not Anagram")'''
+    print("Not Anagram")
 
+#65. Character Frequency Ranking
 str1 = input("Enter the string:")
 freq1 = {}
 for c in str1:
